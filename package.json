@@ -1,0 +1,19 @@
+{
+  "name": "redux-learn-project",
+  "version": "1.0.0",
+  "description": "Project for redux learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwizy/redux-learn.git"
+  },
+  "author": "iWizard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iwizy/redux-learn/issues"
+  },
+  "homepage": "https://github.com/iwizy/redux-learn#readme"
+}
