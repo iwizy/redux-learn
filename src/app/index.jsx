@@ -4,31 +4,13 @@ import { connect } from 'react-redux';
 import './style.css';
 
 class App extends Component {
-  state = {
-    count: 0
-  };
-
-  increment = (event) => {
-    let {count} = this.state;
-    this.setState({
-      count: this.state.count + 1
-    })
-  };
-
-  decrement = (event) => {
-    let {count} = this.state;
-    this.setState({
-      count: this.state.count - 1
-    })
-  };
-
   render() {
     return (
       <div>
-        <div>{this.state.count}</div>
+        <div>{this.props.counter}</div>
         <div>
-          <button onClick={this.increment}>Increment</button>
-          <button onClick={this.decrement}>Decrement</button>
+          <button onClick={() => this.props.increaseAction(1)}>Increment</button>
+          <button onClick={() => this.props.decreaseAction(1)}>Decrement</button>
         </div>
       </div>
     );
