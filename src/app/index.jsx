@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import * as Actions from './actions';
+import { connect } from 'react-redux';
 import './style.css';
 
 class App extends Component {
@@ -33,4 +35,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return ({
+    counter: state.applicationReducer.counter
+  });
+};
+
+export default connect(mapStateToProps, Actions)(App);
